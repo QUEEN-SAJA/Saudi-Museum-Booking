@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE EXPERIENCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="brand">THE EXPERIENCE</div>
+    <a href="#booking">احجز الآن</a>
+</header>
+<section class="hero">
+    <div class="content">
+        <span>AN EXPERIENCE BEYOND EXPECTATIONS</span>
+        <h1>ليست كل التجارب<br>تُحكى...</h1>
+        <p>
+            بعضها ينتظر أن تكتشفه بنفسك.
+            استعد لخوض تجربة مختلفة، واترك التفاصيل للمفاجأة.
+        </p>
+        <a href="#booking" class="button">احجز تجربتك</a>
+    </div>
+    <div class="mystery">01 — 01</div>
+</section>
+<section class="booking" id="booking">
+    <h2>احجز موعدك</h2>
+    <p>خطوتك الأولى نحو تجربة استثنائية.</p>
+    <form id="bookingForm">
+        <label>الاسم الكامل</label>
+        <input type="text" id="name" required>
+        <label>رقم الجوال</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="05xxxxxxxx" required>
+        <label>عدد الزوار</label>
+        <select id="visitors" required>
+            <option value="">اختر العدد</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div class="duration">
+            سيتم إبلاغكم بموعد الزيارة قريبًا بعد تأكيد الحجز.
+        </div>
+        <button type="submit" class="button">
+            تأكيد الحجز
+        </button>
+    </form>
+    <div id="confirmation" hidden></div>
+</section>
+<footer>
+    <p>Some experiences stay with you forever.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

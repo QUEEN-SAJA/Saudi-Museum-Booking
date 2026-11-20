@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    background: #151513;
+
+    color: #eee7d9;
+
+    font-family: 'Cairo', sans-serif;
+
+}
+
+header {
+
+    height: 85px;
+
+    padding: 0 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #38352d;
+
+}
+
+.brand {
+
+    letter-spacing: 3px;
+
+    font-size: 17px;
+
+    color: #c9ad7c;
+
+}
+
+header a {
+
+    color: #eee7d9;
+
+    text-decoration: none;
+
+}
+
+.hero {
+
+    min-height: 570px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 12%;
+
+    position: relative;
+
+    background: linear-gradient(110deg, #171715, #302a20);
+
+}
+
+.content {
+
+    max-width: 650px;
+
+}
+
+.content span {
+
+    color: #b89b6a;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+h1 {
+
+    font-size: clamp(42px, 6vw, 70px);
+
+    line-height: 1.5;
+
+    margin: 25px 0;
+
+}
+
+.content p {
+
+    color: #b9b3a7;
+
+    line-height: 2.2;
+
+    margin-bottom: 30px;
+
+}
+
+.button {
+
+    display: inline-block;
+
+    background: #b89b6a;
+
+    color: #171715;
+
+    padding: 13px 35px;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.button:hover {
+
+    background: #e0c99e;
+
+}
+
+.mystery {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 10%;
+
+    color: #9c8969;
+
+    letter-spacing: 4px;
+
+}
+
+.booking {
+
+    max-width: 650px;
+
+    margin: 90px auto;
+
+    padding: 35px;
+
+}
+
+.booking h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+.booking > p {
+
+    color: #aaa18f;
+
+    margin-bottom: 30px;
+
+}
+
+form label {
+
+    display: block;
+
+    margin: 18px 0 8px;
+
+}
+
+input, select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    background: #22221f;
+
+    color: white;
+
+    border: 1px solid #514a3d;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+input:focus, select:focus {
+
+    border-color: #b89b6a;
+
+}
+
+.duration {
+
+    margin: 25px 0;
+
+    color: #c9ad7c;
+
+}
+
+form button {
+
+    width: 100%;
+
+}
+
+#confirmation {
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border: 1px solid #b89b6a;
+
+    line-height: 2.2;
+
+    background: #22221f;
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #9c8969;
+
+    border-top: 1px solid #38352d;
+
+}
+
+@media(max-width: 600px) {
+
+    header {
+
+        padding: 0 5%;
+
+    }
+
+    .hero {
+
+        padding: 65px 7%;
+
+    }
+
+    .booking {
+
+        padding: 25px;
+
+        margin: 50px auto;
+
+    }
+
+}
